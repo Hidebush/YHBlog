@@ -15,21 +15,47 @@ class YHTabBarController: UITabBarController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+extension YHTabBarController {
+    // MRAK: - 设置子控制器
+    private func setupChildControllers() {
+        
+    }
+    
+    
+    /// 使用字典生成一个控制
+    ///
+    /// - parameter dict: 信息字典 [clsName, title, imageName]
+    ///
+    /// - returns: 子控制器
+    private func controller(dict: [String: String]) -> UIViewController {
+        guard let clsName = dict["clsName"],
+        let title = dict["title"],
+        let imageName = dict["imageName"],
+        let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? UIViewController.Type
+            else {
+            return UIViewController()
+        }
+        
+        let vc = cls.init()
+        vc.title = title
+//        vc.tabBarItem.image
+        
+        let nav = YHNavController(rootViewController: vc)
+        
+        return nav
+    }
+}
+
+
+
+
