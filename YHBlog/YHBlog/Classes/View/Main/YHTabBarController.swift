@@ -13,7 +13,7 @@ class YHTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupChildControllers()
     }
     
     
@@ -28,7 +28,14 @@ class YHTabBarController: UITabBarController {
 extension YHTabBarController {
     // MRAK: - 设置子控制器
     private func setupChildControllers() {
-        
+        let array = [
+            ["clsName": "YHHomeViewController", "title": "首页", "imageName": "home"],
+        ]
+        var arrayM = [UIViewController]()
+        for dict in array {
+            arrayM.append(controller(dict))
+        }
+        viewControllers = arrayM
     }
     
     
@@ -48,7 +55,8 @@ extension YHTabBarController {
         
         let vc = cls.init()
         vc.title = title
-//        vc.tabBarItem.image
+        vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
+        vc.tabBarItem.selectedImage = UIImage(named: "tabbar_" + imageName + "_selected")
         
         let nav = YHNavController(rootViewController: vc)
         

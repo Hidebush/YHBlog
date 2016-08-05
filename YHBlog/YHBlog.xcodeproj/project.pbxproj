@@ -431,7 +431,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Theshy.YHBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Theshy/Desktop/YHBlog/YHBlog/YHBlog/YHBlog-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "YHBlog/YHBlog-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -447,7 +447,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Theshy.YHBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Theshy/Desktop/YHBlog/YHBlog/YHBlog/YHBlog-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "YHBlog/YHBlog-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
