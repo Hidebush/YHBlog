@@ -16,6 +16,13 @@ class YHNavController: UINavigationController {
         // Do any additional setup after loading the view.
     }
 
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        
+        hidesBottomBarWhenPushed = viewControllers.count > 1
+        super.pushViewController(viewController, animated: animated)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -28,6 +28,8 @@
 		AA0CBB591D50F703001B8BF8 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0CBB4E1D50F703001B8BF8 /* UIView+Common.m */; };
 		AA0CBB5D1D50F9B0001B8BF8 /* NSAttributedString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0CBB5C1D50F9B0001B8BF8 /* NSAttributedString+Common.m */; };
 		AA0CBB611D50FE1B001B8BF8 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CBB601D50FE1B001B8BF8 /* Bundle+Extension.swift */; };
+		AA6995FF1D55BB3700FFDBBF /* YHBlogDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6995FE1D55BB3700FFDBBF /* YHBlogDefine.swift */; };
+		AAB1F3331D57358000525774 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1F3321D57358000525774 /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,8 @@
 		AA0CBB5B1D50F9B0001B8BF8 /* NSAttributedString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Common.h"; sourceTree = "<group>"; };
 		AA0CBB5C1D50F9B0001B8BF8 /* NSAttributedString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Common.m"; sourceTree = "<group>"; };
 		AA0CBB601D50FE1B001B8BF8 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		AA6995FE1D55BB3700FFDBBF /* YHBlogDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHBlogDefine.swift; sourceTree = "<group>"; };
+		AAB1F3321D57358000525774 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 			children = (
 				AA0CBB3A1D50F703001B8BF8 /* YHCommon */,
 				AA0CBB601D50FE1B001B8BF8 /* Bundle+Extension.swift */,
+				AA6995FE1D55BB3700FFDBBF /* YHBlogDefine.swift */,
+				AAB1F3321D57358000525774 /* UIBarButtonItem+Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA0CBB531D50F703001B8BF8 /* NSString+Base64.m in Sources */,
+				AA6995FF1D55BB3700FFDBBF /* YHBlogDefine.swift in Sources */,
 				AA0CBB591D50F703001B8BF8 /* UIView+Common.m in Sources */,
 				AA0CBB0F1D50DF43001B8BF8 /* YHDiscoverViewController.swift in Sources */,
 				AA0CBB111D50DF4C001B8BF8 /* YHProfileViewController.swift in Sources */,
@@ -307,6 +314,7 @@
 				AA0CBB521D50F703001B8BF8 /* NSObject+Runtime.m in Sources */,
 				AA0CBB091D50DDA0001B8BF8 /* YHBaseController.swift in Sources */,
 				AA0CBAE91D50D7F3001B8BF8 /* AppDelegate.swift in Sources */,
+				AAB1F3331D57358000525774 /* UIBarButtonItem+Extension.swift in Sources */,
 				AA0CBB541D50F703001B8BF8 /* NSString+Hash.m in Sources */,
 				AA0CBB5D1D50F9B0001B8BF8 /* NSAttributedString+Common.m in Sources */,
 				AA0CBB071D50DD6A001B8BF8 /* YHNavController.swift in Sources */,
