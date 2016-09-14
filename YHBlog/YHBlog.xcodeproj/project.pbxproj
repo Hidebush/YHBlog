@@ -29,6 +29,7 @@
 		AA0CBB5D1D50F9B0001B8BF8 /* NSAttributedString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0CBB5C1D50F9B0001B8BF8 /* NSAttributedString+Common.m */; };
 		AA0CBB611D50FE1B001B8BF8 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CBB601D50FE1B001B8BF8 /* Bundle+Extension.swift */; };
 		AA6995FF1D55BB3700FFDBBF /* YHBlogDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6995FE1D55BB3700FFDBBF /* YHBlogDefine.swift */; };
+		AAADB8781D80581B007817DE /* YHVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAADB8771D80581B007817DE /* YHVisitorView.swift */; };
 		AAB1F3331D57358000525774 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1F3321D57358000525774 /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		AA0CBB5C1D50F9B0001B8BF8 /* NSAttributedString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Common.m"; sourceTree = "<group>"; };
 		AA0CBB601D50FE1B001B8BF8 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		AA6995FE1D55BB3700FFDBBF /* YHBlogDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHBlogDefine.swift; sourceTree = "<group>"; };
+		AAADB8771D80581B007817DE /* YHVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHVisitorView.swift; sourceTree = "<group>"; };
 		AAB1F3321D57358000525774 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +174,7 @@
 		AA0CBB001D50DC9E001B8BF8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AAADB8761D8057CC007817DE /* VisitorView */,
 				AA0CBB041D50DD52001B8BF8 /* YHTabBarController.swift */,
 				AA0CBB061D50DD6A001B8BF8 /* YHNavController.swift */,
 				AA0CBB081D50DDA0001B8BF8 /* YHBaseController.swift */,
@@ -228,6 +231,14 @@
 				AA0CBB4F1D50F703001B8BF8 /* YHCommon.h */,
 			);
 			path = YHCommon;
+			sourceTree = "<group>";
+		};
+		AAADB8761D8057CC007817DE /* VisitorView */ = {
+			isa = PBXGroup;
+			children = (
+				AAADB8771D80581B007817DE /* YHVisitorView.swift */,
+			);
+			path = VisitorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +333,7 @@
 				AA0CBB571D50F703001B8BF8 /* UIColor+Common.m in Sources */,
 				AA0CBB0B1D50DDD4001B8BF8 /* YHHomeViewController.swift in Sources */,
 				AA0CBB581D50F703001B8BF8 /* UILabel+Common.m in Sources */,
+				AAADB8781D80581B007817DE /* YHVisitorView.swift in Sources */,
 				AA0CBB0D1D50DF37001B8BF8 /* YHMessageViewController.swift in Sources */,
 				AA0CBB561D50F703001B8BF8 /* UIButton+Common.m in Sources */,
 				AA0CBB611D50FE1B001B8BF8 /* Bundle+Extension.swift in Sources */,

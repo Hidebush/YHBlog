@@ -13,7 +13,24 @@ class YHHomeViewController: YHBaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", target: self, action: #selector(showFriend))
+    }
+    
+    override func loadData() {
+        print("开始刷新")
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+            
+            self.refreshControl?.endRefreshing()
+            print("刷新表格")
+            self.tableView?.reloadData()
+        }
+        
+    }
+    
+    @objc private func showFriend() {
+        print(#function)
+        
     }
 
     override func didReceiveMemoryWarning() {

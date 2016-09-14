@@ -20,7 +20,7 @@ class YHTabBarController: UITabBarController {
     }
     
     
-    @objc private func composeBtnClick() {
+    func composeBtnClick() {
         print("发布微博")
         let button = UIButton(type: .custom)
         button.addTarget(self, action: #selector(buttonClick), for: .touchUpInside)
@@ -30,7 +30,11 @@ class YHTabBarController: UITabBarController {
         print(#function)
     }
     
-    private lazy var composeBtn: UIButton = UIButton.yh_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .portrait
+    }
+    
+    lazy var composeBtn: UIButton = UIButton.yh_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -41,7 +45,7 @@ class YHTabBarController: UITabBarController {
 extension YHTabBarController {
     
     // MARK: - 设置加号按钮
-    private func setupComposeBtn() {
+    func setupComposeBtn() {
         tabBar.addSubview(composeBtn)
         
         // FIXME: 减去1 是因为 tabbar 容错点  中间按钮点击区域小  减去一可以增大点击区域
@@ -52,7 +56,7 @@ extension YHTabBarController {
     }
     
     // MRAK: - 设置子控制器
-    private func setupChildControllers() {
+    func setupChildControllers() {
         let array = [
             ["clsName": "YHHomeViewController", "title": "首页", "imageName": "home"],
             ["clsName": "YHMessageViewController", "title": "消息", "imageName": "message_center"],
